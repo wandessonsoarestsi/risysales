@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Risy Sales, estética facial em João Pessoa. Botox, Lavieen e peelings com avaliação individual. Agende pelo WhatsApp.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Risy Sales · Estética facial em João Pessoa">
+<meta property="og:description" content="Pele bonita e natural, sem exagero. Agende sua avaliação pelo WhatsApp.">
+<meta property="og:image" content="img/risy-lavieen.jpg">
+<meta name="theme-color" content="#F6F1EE">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%237E3F4A'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='32' fill='%23F6F1EE' text-anchor='middle'%3ERS%3C/text%3E%3C/svg%3E">
+<title>Risy Sales Estética</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap">
+<style>
+/* Layout: landing de uma página para estética facial. Hero em duas colunas (texto + retrato em arco), seções alternando porcelana e nude, faixa rosewood para conversão. Visual único da marca, claro. */
+:root{
+  --porc:#F6F1EE; --nude:#E9D7CE; --rose:#7E3F4A; --rose-d:#6A333D; --graf:#2E2629; --champ:#C4A484; --mute:#6B5A5E; --line:#E2D2C9; --white:#FFFDFC;
+  --display:'Bodoni Moda',Didot,'Times New Roman',serif; --body:'DM Sans',Helvetica,Arial,sans-serif;
+  --gut-l:max(20px,env(safe-area-inset-left,0px)); --gut-r:max(20px,env(safe-area-inset-right,0px));
+}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--porc);color:var(--graf);font-family:var(--body);font-size:17px;line-height:1.6}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--porc)}
+a{color:inherit}
+.in{max-width:1120px;margin:0 auto;padding-left:var(--gut-l);padding-right:var(--gut-r)}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.08;text-wrap:balance}
+h1 em,h2 em{font-style:italic;color:var(--rose)}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--rose)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--rose);color:var(--porc);text-decoration:none;font-weight:700;font-size:16px;padding:16px 28px;border-radius:60px;transition:background .2s}
+.btn:hover{background:var(--rose-d)}
+.btn:focus-visible,.link:focus-visible,nav a:focus-visible{outline:3px solid var(--champ);outline-offset:3px}
+.btn svg{width:20px;height:20px;flex:none}
+.btn.ghost{background:transparent;color:var(--rose);border:1.5px solid var(--rose)}
+.btn.ghost:hover{background:var(--rose);color:var(--porc)}
+.btn.light{background:var(--porc);color:var(--rose)}
+.btn.light:hover{background:var(--nude)}
+
+/* faixa de protótipo */
+.proto{background:var(--graf);color:var(--nude);font-size:12px;letter-spacing:.16em;text-transform:uppercase;text-align:center;padding-block:8px;font-weight:700}
+
+/* topo */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(246,241,238,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .in{display:flex;align-items:center;gap:24px;height:68px}
+.logo{font-family:var(--display);font-size:26px;text-decoration:none;letter-spacing:-.01em}
+.logo i{color:var(--rose)}
+.logo small{display:block;font-family:var(--body);font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--mute);margin-top:-4px}
+nav{display:flex;gap:26px;margin-left:auto;font-size:15px}
+nav a{text-decoration:none;color:var(--mute)} nav a:hover{color:var(--rose)}
+header .btn{padding:11px 20px;font-size:14px}
+@media (max-width:860px){nav{display:none} header .btn{margin-left:auto}}
+
+/* hero */
+.hero .in{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding-block:64px 80px}
+.hero .in>*{min-width:0}
+.hero h1{font-size:clamp(44px,6.4vw,80px);margin-top:18px}
+.hero p.lead{font-size:19px;color:var(--mute);max-width:34ch;margin-top:22px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.proof{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:36px;font-size:14px;color:var(--mute)}
+.proof b{color:var(--graf)}
+.stars{color:var(--champ);letter-spacing:2px}
+.arch{position:relative;justify-self:center;width:min(100%,440px)}
+.arch img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 20%;border-radius:220px 220px 18px 18px;border:6px solid var(--white);box-shadow:0 30px 60px -30px rgba(46,38,41,.45)}
+.arch .tag{position:absolute;left:-18px;bottom:36px;background:var(--white);border-radius:16px;padding:14px 18px;font-size:14px;box-shadow:0 12px 30px -12px rgba(46,38,41,.35);max-width:220px}
+.arch .tag b{display:block;font-family:var(--display);font-size:20px;font-weight:500}
+@media (max-width:860px){.hero .in{grid-template-columns:1fr;gap:40px;padding-block:40px 56px}.arch .tag{left:8px}}
+
+/* faixa da marca */
+.ribbon{background:var(--rose);color:var(--porc);overflow:hidden}
+.ribbon .in{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;padding-block:18px;font-family:var(--display);font-style:italic;font-size:22px}
+.ribbon span{opacity:.9}.ribbon i{color:var(--champ);font-style:normal}
+
+/* seções */
+section{padding-block:96px}
+section h2{font-size:clamp(34px,4.6vw,54px);margin-top:14px}
+.sub{color:var(--mute);max-width:56ch;margin-top:16px;font-size:18px}
+.alt{background:var(--nude)}
+
+/* sobre */
+.about .in{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.about .in>*{min-width:0}
+.about figure{margin:0;position:relative}
+.about figure img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:18px}
+.about figure::after{content:"";position:absolute;inset:18px -18px -18px 18px;border:1.5px solid var(--champ);border-radius:18px;z-index:-1}
+.about p{margin-top:18px;max-width:58ch}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px;border-top:1px solid var(--line);padding-top:26px}
+.facts b{display:block;font-family:var(--display);font-weight:500;font-size:22px;line-height:1.15}
+.facts span{font-size:14px;color:var(--mute)}
+@media (max-width:860px){.about .in{grid-template-columns:1fr;gap:48px}.about figure{max-width:420px}.facts{grid-template-columns:1fr}}
+
+/* procedimentos */
+.procs{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.proc{background:var(--white);border-radius:20px;padding:34px 30px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.proc .ic{width:54px;height:54px;border-radius:50%;background:var(--nude);display:flex;align-items:center;justify-content:center}
+.proc .ic svg{width:28px;height:28px}
+.proc h3{font-size:30px}
+.proc p{color:var(--mute);font-size:16px}
+.proc ul{list-style:none;padding:0;margin:4px 0 0;display:grid;gap:6px;font-size:15px}
+.proc li{padding-left:22px;position:relative}
+.proc li::before{content:"";position:absolute;left:0;top:.7em;width:12px;height:1.5px;background:var(--champ)}
+.proc .link{margin-top:auto;padding-top:10px;color:var(--rose);font-weight:700;text-decoration:none;font-size:15px}
+@media (max-width:900px){.procs{grid-template-columns:1fr}}
+
+/* passos */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:52px;counter-reset:s}
+.step{border-top:1.5px solid var(--graf);padding-top:22px;min-width:0}
+.step .n{font-family:var(--display);font-style:italic;font-size:46px;color:var(--rose);line-height:1}
+.step h3{font-family:var(--body);font-weight:700;font-size:20px;margin-top:14px;line-height:1.3}
+.step p{color:var(--mute);margin-top:8px;font-size:16px}
+@media (max-width:860px){.steps{grid-template-columns:1fr}}
+
+/* depoimentos */
+.quotes{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px}
+.q{background:var(--porc);border-radius:20px;padding:36px 34px;min-width:0}
+.q blockquote{margin:0;font-family:var(--display);font-style:italic;font-size:24px;line-height:1.35}
+.q blockquote::before{content:"“";display:block;font-size:64px;line-height:.6;color:var(--champ);margin-bottom:10px}
+.q footer{margin-top:20px;font-size:14px;color:var(--mute)}
+.q footer b{color:var(--graf)}
+@media (max-width:860px){.quotes{grid-template-columns:1fr}}
+
+/* bastidores */
+.bts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+.bts figure{margin:0;min-width:0}
+.bts img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:14px}
+.bts figcaption{font-size:13px;color:var(--mute);margin-top:8px}
+@media (max-width:860px){.bts{grid-template-columns:repeat(2,1fr)}}
+
+/* cta final */
+.cta{background:var(--rose);color:var(--porc);text-align:center}
+.cta h2{color:var(--porc)} .cta h2 em{color:var(--nude)}
+.cta .sub{color:var(--nude);margin-inline:auto}
+.cta .btn{margin-top:32px}
+
+/* local */
+.local .in{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.local .in>*{min-width:0}
+.card{background:var(--white);border-radius:20px;padding:32px}
+.card dl{display:grid;gap:18px;margin:0}
+.card dt{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--rose)}
+.card dd{margin:4px 0 0;font-size:17px}
+@media (max-width:860px){.local .in{grid-template-columns:1fr}}
+.route{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.route .btn{padding:13px 22px;font-size:15px}
+
+footer.site{border-top:1px solid var(--line);padding-block:36px calc(36px + 70px);font-size:14px;color:var(--mute)}
+footer.site .in{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+
+/* botão flutuante */
+.wa{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:8;width:60px;height:60px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px -8px rgba(0,0,0,.4)}
+.wa svg{width:32px;height:32px}
+.wa:focus-visible{outline:3px solid var(--graf);outline-offset:3px}
+</style>
+<style>*{box-sizing:border-box}body{margin:0}img{max-width:100%}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+</head>
+<body>
+
+<div class="proto">Protótipo · simulação para aprovação</div>
+
+<header>
+  <div class="in">
+    <a class="logo" href="#topo">Risy <i>Sales</i><small>Estética facial</small></a>
+    <nav aria-label="Seções">
+      <a href="#sobre">Sobre</a><a href="#procedimentos">Procedimentos</a><a href="#como-funciona">Como funciona</a><a href="#depoimentos">Depoimentos</a><a href="#local">Onde estamos</a>
+    </nav>
+    <a class="btn" href="https://wa.me/5583988865307?text=Ol%C3%A1%2C%20Risy!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar</a>
+  </div>
+</header>
+
+<main id="topo">
+  <div class="hero">
+    <div class="in">
+      <div>
+        <div class="eyebrow">Estética facial · João Pessoa</div>
+        <h1>Pele bonita e natural, <em>sem exagero.</em></h1>
+        <p class="lead">Botox, Lavieen e peelings com avaliação individual, para realçar quem você já é.</p>
+        <div class="ctas">
+          <a class="btn" href="https://wa.me/5583988865307?text=Ol%C3%A1%2C%20Risy!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg>Agendar avaliação</a>
+          <a class="btn ghost" href="#procedimentos">Ver procedimentos</a>
+        </div>
+        <div class="proof">
+          <span><span class="stars" aria-hidden="true">★★★★★</span> <b>5,0 no Google</b> (2 avaliações)</span>
+          <span><b>Pós-graduada</b> em Estética</span>
+        </div>
+      </div>
+      <div class="arch">
+        <img src="img/risy-lavieen.jpg" alt="Risy Sales segurando a ponteira do laser Lavieen na sala de atendimento">
+        <div class="tag"><b>Risy Sales</b>Esteticista, atende com o laser Lavieen</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ribbon" aria-hidden="true"><div class="in"><span>Botox</span><i>✦</i><span>Lavieen</span><i>✦</i><span>Peeling coreano</span><i>✦</i><span>Peeling de vidro</span></div></div>
+
+  <section id="sobre" class="about">
+    <div class="in">
+      <figure><img src="img/risy-clinica.jpg" alt="Risy Sales no espaço de atendimento, com bancadas e equipamentos"></figure>
+      <div>
+        <div class="eyebrow">Quem cuida de você</div>
+        <h2>Prazer, sou a <em>Risy.</em></h2>
+        <p>Sou pós-graduada em Estética e acredito em resultados que respeitam o seu rosto. Antes de qualquer procedimento, eu avalio a sua pele e converso com você sobre o que faz sentido para o seu caso.</p>
+        <p>Estou sempre em congressos e cursos da área para trazer o que há de mais atual com segurança.</p>
+        <div class="facts">
+          <div><b>Pós-graduação</b><span>em Estética</span></div>
+          <div><b>Congressos</b><span>atualização constante</span></div>
+          <div><b>Atendimento</b><span>individual, com hora marcada</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="procedimentos" class="alt">
+    <div class="in">
+      <div class="eyebrow">Procedimentos</div>
+      <h2>Cuidados para cada <em>objetivo</em></h2>
+      <p class="sub">A indicação sai da avaliação. Os textos abaixo explicam cada procedimento de forma geral.</p>
+      <div class="procs">
+        <article class="proc">
+          <div class="ic"><svg viewBox="0 0 100 100" fill="none" stroke="#7E3F4A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M50 14 C50 14 26 44 26 62 A24 24 0 0 0 74 62 C74 44 50 14 50 14 Z"/></svg></div>
+          <h3>Toxina botulínica</h3>
+          <p>O conhecido Botox. Suaviza linhas de expressão da testa e dos olhos mantendo os movimentos do rosto.</p>
+          <ul><li>Aplicação rápida</li><li>Resultado natural, sem "rosto congelado"</li><li>Retorno para acompanhamento</li></ul>
+          <a class="link" href="https://wa.me/5583988865307?text=Ol%C3%A1%2C%20Risy!%20Quero%20saber%20mais%20sobre%20Botox." target="_blank" rel="noopener">Quero saber mais →</a>
+        </article>
+        <article class="proc">
+          <div class="ic"><svg viewBox="0 0 100 100" fill="none" stroke="#7E3F4A" stroke-width="5" stroke-linecap="round"><circle cx="50" cy="50" r="13"/><path d="M50 14V26M50 74V86M14 50H26M74 50H86M24.5 24.5L33 33M67 67L75.5 75.5M24.5 75.5L33 67M67 33L75.5 24.5"/></svg></div>
+          <h3>Lavieen</h3>
+          <p>Laser para melhorar textura, manchas e viço da pele, com a pele mais uniforme e iluminada.</p>
+          <ul><li>Textura e poros</li><li>Manchas e tom irregular</li><li>Pele com mais viço</li></ul>
+          <a class="link" href="https://wa.me/5583988865307?text=Ol%C3%A1%2C%20Risy!%20Quero%20saber%20mais%20sobre%20o%20Lavieen." target="_blank" rel="noopener">Quero saber mais →</a>
+        </article>
+        <article class="proc">
+          <div class="ic"><svg viewBox="0 0 100 100" fill="none" stroke="#7E3F4A" stroke-width="5" stroke-linecap="round"><path d="M16 36 Q50 14 84 36"/><path d="M16 54 Q50 32 84 54"/><path d="M16 72 Q50 50 84 72"/></svg></div>
+          <h3>Peelings</h3>
+          <p>Peeling coreano e peeling de vidro para renovar a pele e devolver luminosidade, o famoso "glow".</p>
+          <ul><li>Renovação da pele</li><li>Luminosidade</li><li>Protocolo conforme a sua pele</li></ul>
+          <a class="link" href="https://wa.me/5583988865307?text=Ol%C3%A1%2C%20Risy!%20Quero%20saber%20mais%20sobre%20os%20peelings." target="_blank" rel="noopener">Quero saber mais →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona">
+    <div class="in">
+      <div class="eyebrow">Como funciona</div>
+      <h2>Sua avaliação em <em>3 passos</em></h2>
+      <div class="steps">
+        <div class="step"><div class="n">1</div><h3>Chame no WhatsApp</h3><p>Conte seu nome e o que você quer melhorar na pele. A mensagem já vai pronta pelo botão.</p></div>
+        <div class="step"><div class="n">2</div><h3>Avaliação da sua pele</h3><p>Conversamos sobre seus objetivos e eu avalio o que é indicado para você.</p></div>
+        <div class="step"><div class="n">3</div><h3>Plano de cuidados</h3><p>Você sai com os procedimentos e a frequência definidos para o seu caso.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="alt">
+    <div class="in">
+      <div class="eyebrow">Avaliações no Google</div>
+      <h2>Quem já passou <em>por aqui</em></h2>
+      <div class="quotes">
+        <figure class="q" style="margin:0"><blockquote>Eu não confio em outra esteticista, pra mim só existe ela. Recomendo de olhos fechados.</blockquote><footer><b>Agnes M.</b> · avaliação 5 estrelas no Google</footer></figure>
+        <figure class="q" style="margin:0"><blockquote>Profissional excelente! Confio de olhos fechados!</blockquote><footer><b>Isabelly C.</b> · avaliação 5 estrelas no Google</footer></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="bastidores">
+    <div class="in">
+      <div class="eyebrow">Bastidores</div>
+      <h2>Acompanhe no <em>Instagram</em></h2>
+      <p class="sub">Dicas de cuidados com a pele, rotina de atendimento e novidades.</p>
+      <div class="bts">
+        <figure><img src="img/risy-reel-lavieen-day.jpg" alt="Risy falando para a câmera sobre o Lavieen Day" style="object-position:center 10%"><figcaption>Lavieen Day</figcaption></figure>
+        <figure><img src="img/risy-reel-clinica.jpg" alt="Risy apresentando o espaço de atendimento"><figcaption>Conheça o espaço</figcaption></figure>
+        <figure><img src="img/risy-lavieen.jpg" alt="Risy com o laser Lavieen"><figcaption>Laser Lavieen</figcaption></figure>
+        <figure><img src="img/risy-clinica.jpg" alt="Sala de atendimento" style="object-position:center"><figcaption>Sala de atendimento</figcaption></figure>
+      </div>
+      <p style="margin-top:28px"><a class="btn ghost" href="https://www.instagram.com/risysales.estetica/" target="_blank" rel="noopener">@risysales.estetica</a></p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="in">
+      <h2>Pronta para cuidar da sua pele <em>sem exagero?</em></h2>
+      <p class="sub">Agende sua avaliação pelo WhatsApp. A resposta é rápida e a mensagem já vai pronta.</p>
+      <a class="btn light" href="https://wa.me/5583988865307?text=Ol%C3%A1%2C%20Risy!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar avaliação no WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="local" class="local">
+    <div class="in">
+      <div>
+        <div class="eyebrow">Onde estamos</div>
+        <h2>Atendimento em <em>João Pessoa</em></h2>
+        <p class="sub">Atendimento com hora marcada. Escolha como prefere chegar.</p>
+        <div class="route">
+          <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Risy+Sales+Est%C3%A9tica+Integrativa+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Google Maps</a>
+          <a class="btn ghost" href="https://waze.com/ul?ll=-7.11944,-34.85919&navigate=yes" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 15.5C3.6 14.6 3 13.2 3 11.5 3 7 7 4 12 4s9 3 9 7.5-4 7.5-9 7.5c-1 0-2-.1-2.9-.4"/><circle cx="7.5" cy="18" r="1.6"/><circle cx="15.5" cy="18.5" r="1.6"/><path d="M9.5 13.5c1.2 1 3.8 1 5 0"/><circle cx="10" cy="9.5" r=".6" fill="currentColor"/><circle cx="15" cy="9.5" r=".6" fill="currentColor"/></svg>Waze</a>
+          <a class="btn ghost" href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[latitude]=-7.11944&dropoff[longitude]=-34.85919&dropoff[nickname]=Risy%20Sales%20Est%C3%A9tica&dropoff[formatted_address]=Av.%20Pres.%20Epit%C3%A1cio%20Pessoa%2C%201251%20-%20Estados%2C%20Jo%C3%A3o%20Pessoa%20-%20PB" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17h14M6 17v2M18 17v2M4 13l2-5.5A2 2 0 0 1 7.9 6h8.2a2 2 0 0 1 1.9 1.5L20 13v4H4z"/><circle cx="8" cy="14" r=".8" fill="currentColor"/><circle cx="16" cy="14" r=".8" fill="currentColor"/></svg>Uber</a>
+        </div>
+      </div>
+      <div class="card">
+        <dl>
+          <div><dt>Endereço</dt><dd>Av. Pres. Epitácio Pessoa, 1251<br>Estados, João Pessoa, PB, 58030-901</dd></div>
+          <div><dt>WhatsApp</dt><dd>(83) 98886-5307</dd></div>
+          <div><dt>Horário</dt><dd>Com hora marcada (horários a confirmar)</dd></div>
+          <div><dt>Instagram</dt><dd>@risysales.estetica</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="in">
+    <span>© Risy Sales · Estética facial · João Pessoa</span>
+    <span>Protótipo para aprovação. Textos e dados sujeitos à confirmação.</span>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/5583988865307?text=Ol%C3%A1%2C%20Risy!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp"><svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg></a>
+
+</body>
+</html>
